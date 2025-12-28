@@ -1,0 +1,8 @@
+width=300
+height=250
+location=center
+show=dmenu
+prompt=Power Menu
+allow_images=true
+hide_scroll=true
+insensitive=true

@@ -1,0 +1,81 @@
+/* TOKYO NIGHT STORM COLORS */
+@define-color bg #24283b;
+@define-color fg #c0caf5;
+@define-color black #414868;
+@define-color red #f7768e;
+@define-color green #73daca;
+@define-color yellow #e0af68;
+@define-color blue #7aa2f7;
+@define-color magenta #bb9af7;
+@define-color cyan #7dcfff;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent; /* Makes the bar float */
+    color: @fg;
+}
+
+/* This creates the 'Pill' look from your photo */
+.modules-left, .modules-center, .modules-right {
+    background-color: rgba(36, 40, 59, 0.85); /* Tokyo Night Storm with Transparency */
+    border: 1px solid rgba(122, 162, 247, 0.2);
+    padding: 2px 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+/* Individual Module Styling */
+#workspaces button {
+    padding: 0 5px;
+    color: @fg;
+    background-color: transparent;
+}
+
+#workspaces button.active {
+    color: @cyan;
+    border-bottom: 2px solid @cyan;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#clock {
+    color: @magenta;
+}
+
+#cpu { color: @green; }
+#memory { color: @yellow; }
+#temperature { color: @blue; }
+#backlight { color: @yellow; }
+#battery { color: @green; }
+#battery.critical { color: @red; }
+
+#network {
+    color: @cyan;
+}
+
+#pulseaudio {
+    color: @blue;
+}
+
+#custom-power {
+    color: @red;
+    margin-left: 5px;
+}
+
+#tray {
+    margin-left: 10px;
+}
+
+/* Tooltip styling */
+tooltip {
+    background: @bg;
+    border: 1px solid @blue;
+    border-radius: 10px;
+}

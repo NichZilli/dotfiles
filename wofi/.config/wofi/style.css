@@ -1,0 +1,54 @@
+/* Tokyo Night Storm Palette */
+@define-color bg #24283b;
+@define-color bg-alt #1f2335;
+@define-color fg #c0caf5;
+@define-color blue #7aa2f7;
+@define-color cyan #7dcfff;
+@define-color magenta #bb9af7;
+@define-color selection #3d59a1;
+
+window {
+    margin: 0px;
+    border: 2px solid @blue;
+    background-color: rgba(36, 40, 59, 0.9); /* Translucent background */
+    border-radius: 15px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+#outer-box {
+    margin: 10px;
+    border: none;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: @fg;
+    background-color: @bg-alt;
+    border-radius: 10px;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#text {
+    margin: 5px;
+    color: @fg;
+}
+
+#entry:selected {
+    background-color: @selection;
+    border-radius: 10px;
+    outline: none;
+}
+
+#text:selected {
+    color: @cyan; /* Highlighted text color */
+}
