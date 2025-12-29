@@ -1,0 +1,5 @@
+[[manager.prepend_keymap]]
+on   = [ "Z" ] # This is Shift + z
+run  = "shell 'file=$(fd . | fzf) && [ -n \"$file\" ] && ya emit reveal \"$file\"' --block"
+desc = "FZF search"
+
