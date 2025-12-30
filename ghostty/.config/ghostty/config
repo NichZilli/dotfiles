@@ -3,3 +3,4 @@ background-opacity = 0.95
 gtk-titlebar = false
 font-family = CaskaydiaCove Nerd Font
 theme = TokyoNight Storm
+scrollback-limit = 100000
