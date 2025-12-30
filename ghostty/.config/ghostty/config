@@ -4,3 +4,4 @@ gtk-titlebar = false
 font-family = CaskaydiaCove Nerd Font
 theme = TokyoNight Storm
 scrollback-limit = 100000
+env = GTK_IM_MODULE=simple
