@@ -14,14 +14,15 @@
     ],
     "modules-center": [
         "hyprland/window",
-	"clock"
+	      "clock"
     ],
     "modules-right": [
         "wireplumber",
         "cpu",
         "memory",
+        "disk",
         "temperature",
-	"bluetooth",
+	      "bluetooth",
         "tray",
         "custom/power"
     ],
@@ -104,10 +105,14 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true
     },
     "memory": {
         "format": "{percentage}% "
+    },
+    "disk": {
+      "format": "{percentage_free}%",
+      "tooltip": true
     },
     "temperature": {
         "thermal-zone": 2,
@@ -166,7 +171,7 @@
         // "format-bluetooth": "{volume}% {icon} {format_source}",
         // "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": " {volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -201,7 +206,7 @@
     },
     "custom/power": {
         "format" : "⏻ ",
-	"tooltip": false,
-    	"on-click": "~/.config/waybar/power_menu.sh"
+	      "tooltip": false,
+    	  "on-click": "~/.config/waybar/power_menu.sh"
     }
 }
